@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "id": "http://jsonschema.net/Name",
+      "type": "string"
+    },
+    "SAP#": {
+      "id": "http://jsonschema.net/SAP#",
+      "type": "string"
+    },
+    "SFDC#": {
+      "id": "http://jsonschema.net/SFDC#",
+      "type": "string"
+    }
+  },
+  "required": [
+    "Name",
+    "SAP#",
+    "SFDC#"
+  ]
+}

@@ -1,0 +1,20 @@
+#%RAML 0.8
+title: SAP-SFDC-API
+baseUri: http://sap-sfdc-api.eu.cloudhub.io/
+version: 1
+
+/customer:
+  /search:
+    /{custname}:
+      get:
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  {
+                    "Name" : "Airlight",
+                    "SAP#" : "0000100001",
+                    "SFDC#" : "asdaksl223"
+                  }
+                schema: !include json-schema.json

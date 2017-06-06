@@ -4,6 +4,7 @@ dependencies:
 
 test:
   override:
+    - mvn -s circleci.settings.xml -o surefire:test
 
 deployment:
   main:
